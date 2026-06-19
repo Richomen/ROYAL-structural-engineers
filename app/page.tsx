@@ -87,9 +87,9 @@ export default function Home() {
             <Image
               src="/royal-logo.png"
               alt="ROYAL Structural Engineers"
-              width={180}
-              height={80}
-              className="h-14 w-auto object-contain"
+              width={360}
+              height={160}
+              className="h-28 w-auto object-contain"
               priority
             />
           </a>
@@ -366,9 +366,9 @@ export default function Home() {
             <Image
               src="/royal-logo.png"
               alt="ROYAL Structural Engineers"
-              width={190}
-              height={90}
-              className="h-20 w-auto object-contain"
+              width={380}
+              height={180}
+              className="h-28 w-auto object-contain"
             />
 
             <p className="mt-5 max-w-xs text-sm leading-7 text-white/70">
