@@ -121,69 +121,70 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section
-        id="home"
-        className="relative overflow-hidden border-b border-[#d8d8d8] bg-[#f7f5ef]"
-      >
-        <div className="absolute inset-0 opacity-[0.08]">
-          <div className="h-full w-full bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:42px_42px]" />
-        </div>
-
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
-          <div>
-            <div className="mb-5 h-1 w-16 bg-[#c8a94a]" />
-
-            <h1 className="max-w-2xl font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[#071b33] md:text-6xl">
-              Structural Integrity for Projects That Stand the Test of Time
-            </h1>
-
-            <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663] md:text-lg">
-              At ROYAL Structural Engineers, we combine deep technical
-              expertise with disciplined engineering principles to deliver safe,
-              efficient and enduring solutions. From concept to completion, we
-              build confidence in every structure.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 bg-[#0057d9] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#003f9f]"
-              >
-                Our Services
-                <ArrowRight size={18} />
-              </a>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 border border-[#0057d9] px-6 py-4 text-sm font-semibold text-[#0057d9] transition hover:bg-[#0057d9] hover:text-white"
-              >
-                Contact ROYAL
-                <ArrowRight size={18} />
-              </a>
-            </div>
-          </div>
-<div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
-  <Image
-    src="/hero-building.png"
-    alt="ROYAL Structural Engineers building"
-    fill
-    className="object-cover"
-    priority
-  />
-
-  <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
-
-  <div className="absolute bottom-6 left-6 border-l-4 border-[#c8a94a] bg-white/90 p-5 shadow-lg">
-    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
-      Engineering
-    </p>
-    <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
-      Discipline. Precision. Trust.
-    </p>
+<section
+  id="home"
+  className="relative overflow-hidden border-b border-[#d8d8d8] bg-[#f7f5ef]"
+>
+  <div className="absolute inset-0 opacity-[0.08]">
+    <div className="h-full w-full bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:42px_42px]" />
   </div>
-</div>
-      </section>
 
+  <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+    <div>
+      <div className="mb-5 h-1 w-16 bg-[#c8a94a]" />
+
+      <h1 className="max-w-2xl font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[#071b33] md:text-6xl">
+        Structural Integrity for Projects That Stand the Test of Time
+      </h1>
+
+      <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663] md:text-lg">
+        At ROYAL Structural Engineers, we combine deep technical expertise with
+        disciplined engineering principles to deliver safe, efficient and
+        enduring solutions. From concept to completion, we build confidence in
+        every structure.
+      </p>
+
+      <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a
+          href="#services"
+          className="inline-flex items-center justify-center gap-2 bg-[#0057d9] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#003f9f]"
+        >
+          Our Services
+          <ArrowRight size={18} />
+        </a>
+
+        <a
+          href="#contact"
+          className="inline-flex items-center justify-center gap-2 border border-[#0057d9] px-6 py-4 text-sm font-semibold text-[#0057d9] transition hover:bg-[#0057d9] hover:text-white"
+        >
+          Contact ROYAL
+          <ArrowRight size={18} />
+        </a>
+      </div>
+    </div>
+
+    <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
+      <Image
+        src="/hero-building.png"
+        alt="ROYAL Structural Engineers building"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
+
+      <div className="absolute bottom-6 left-6 border-l-4 border-[#c8a94a] bg-white/90 p-5 shadow-lg">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
+          Engineering
+        </p>
+        <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
+          Discipline. Precision. Trust.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       {/* FEATURE STRIP */}
       <section className="border-b border-[#d8d8d8] bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-8 md:grid-cols-3 lg:px-8">
