@@ -89,7 +89,7 @@ export default function Home() {
               alt="ROYAL Structural Engineers"
               width={410}
               height={148}
-              className="h-auto w-[240px] object-contain"
+              className="h-auto w-[280px] object-contain"
               priority
              />
           </a>
