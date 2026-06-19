@@ -363,13 +363,13 @@ export default function Home() {
       <footer className="bg-[#071b33] px-6 py-14 text-white lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
           <div>
-            <Image
-              src="/royal-logo.png"
+           <Image
+              src="/Royal-azul.png"
               alt="ROYAL Structural Engineers"
-              width={380}
-              height={180}
-              className="h-28 w-auto object-contain"
-            />
+              width={410}
+              height={148}
+              className="h-auto w-[260px] object-contain"
+             />
 
             <p className="mt-5 max-w-xs text-sm leading-7 text-white/70">
               Structural integrity. Professional excellence. Trusted by clients.
