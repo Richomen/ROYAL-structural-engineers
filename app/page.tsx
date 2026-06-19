@@ -162,46 +162,26 @@ export default function Home() {
               </a>
             </div>
           </div>
+<div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
+  <Image
+    src="/hero-building.png"
+    alt="ROYAL Structural Engineers building"
+    fill
+    className="object-cover"
+    priority
+  />
 
-          <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
-            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,87,217,0.12),transparent_45%)]" />
+  <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
 
-            <div className="absolute left-8 top-8 h-72 w-72 border border-[#0057d9]/30" />
-            <div className="absolute left-16 top-16 h-72 w-72 border border-[#0057d9]/20" />
-
-            <div className="absolute bottom-0 right-0 h-[82%] w-[82%] bg-[#e7ebf0]">
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#0057d9_1px,transparent_1px),linear-gradient(to_bottom,#0057d9_1px,transparent_1px)] bg-[size:34px_34px] opacity-20" />
-
-              <div className="absolute bottom-0 right-0 h-[80%] w-[82%] bg-[#d9dde3] shadow-2xl">
-                <div className="grid h-full grid-cols-5 gap-2 p-6">
-                  {Array.from({ length: 25 }).map((_, index) => (
-                    <div
-                      key={index}
-                      className="border border-[#071b33]/20 bg-white/50"
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <div className="absolute bottom-0 left-10 h-[65%] w-[24%] bg-[#071b33] shadow-xl">
-                <div className="grid h-full grid-cols-2 gap-2 p-4">
-                  {Array.from({ length: 12 }).map((_, index) => (
-                    <div key={index} className="bg-white/20" />
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute bottom-6 left-6 border-l-4 border-[#c8a94a] bg-white/90 p-5 shadow-lg">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
-                Engineering
-              </p>
-              <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
-                Discipline. Precision. Trust.
-              </p>
-            </div>
-          </div>
-        </div>
+  <div className="absolute bottom-6 left-6 border-l-4 border-[#c8a94a] bg-white/90 p-5 shadow-lg">
+    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
+      Engineering
+    </p>
+    <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
+      Discipline. Precision. Trust.
+    </p>
+  </div>
+</div>
       </section>
 
       {/* FEATURE STRIP */}
