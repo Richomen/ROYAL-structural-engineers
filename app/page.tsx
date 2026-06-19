@@ -85,13 +85,13 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
             <Image
-              src="/royal-logo.png"
+              src="/Royal-azul.png"
               alt="ROYAL Structural Engineers"
-              width={360}
-              height={160}
-              className="h-28 w-auto object-contain"
+              width={410}
+              height={148}
+              className="h-auto w-[240px] object-contain"
               priority
-            />
+             />
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-medium text-white md:flex">
