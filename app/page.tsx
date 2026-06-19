@@ -1,4 +1,5 @@
 import Image from "next/image"
+import type { ElementType } from "react"
 import {
   Building2,
   Calculator,
@@ -86,8 +87,8 @@ export default function Home() {
             <Image
               src="/royal-logo.png"
               alt="ROYAL Structural Engineers"
-              width={360}
-              height={190}
+              width={180}
+              height={80}
               className="h-14 w-auto object-contain"
               priority
             />
@@ -121,70 +122,71 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-<section
-  id="home"
-  className="relative overflow-hidden border-b border-[#d8d8d8] bg-[#f7f5ef]"
->
-  <div className="absolute inset-0 opacity-[0.08]">
-    <div className="h-full w-full bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:42px_42px]" />
-  </div>
+      <section
+        id="home"
+        className="relative overflow-hidden border-b border-[#d8d8d8] bg-[#f7f5ef]"
+      >
+        <div className="absolute inset-0 opacity-[0.08]">
+          <div className="h-full w-full bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:42px_42px]" />
+        </div>
 
-  <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
-    <div>
-      <div className="mb-5 h-1 w-16 bg-[#c8a94a]" />
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+          <div>
+            <div className="mb-5 h-1 w-16 bg-[#c8a94a]" />
 
-      <h1 className="max-w-2xl font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[#071b33] md:text-6xl">
-        Structural Integrity for Projects That Stand the Test of Time
-      </h1>
+            <h1 className="max-w-2xl font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[#071b33] md:text-6xl">
+              Structural Integrity for Projects That Stand the Test of Time
+            </h1>
 
-      <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663] md:text-lg">
-        At ROYAL Structural Engineers, we combine deep technical expertise with
-        disciplined engineering principles to deliver safe, efficient and
-        enduring solutions. From concept to completion, we build confidence in
-        every structure.
-      </p>
+            <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663] md:text-lg">
+              At ROYAL Structural Engineers, we combine deep technical expertise
+              with disciplined engineering principles to deliver safe, efficient
+              and enduring solutions. From concept to completion, we build
+              confidence in every structure.
+            </p>
 
-      <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-        <a
-          href="#services"
-          className="inline-flex items-center justify-center gap-2 bg-[#0057d9] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#003f9f]"
-        >
-          Our Services
-          <ArrowRight size={18} />
-        </a>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center gap-2 bg-[#0057d9] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#003f9f]"
+              >
+                Our Services
+                <ArrowRight size={18} />
+              </a>
 
-        <a
-          href="#contact"
-          className="inline-flex items-center justify-center gap-2 border border-[#0057d9] px-6 py-4 text-sm font-semibold text-[#0057d9] transition hover:bg-[#0057d9] hover:text-white"
-        >
-          Contact ROYAL
-          <ArrowRight size={18} />
-        </a>
-      </div>
-    </div>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 border border-[#0057d9] px-6 py-4 text-sm font-semibold text-[#0057d9] transition hover:bg-[#0057d9] hover:text-white"
+              >
+                Contact ROYAL
+                <ArrowRight size={18} />
+              </a>
+            </div>
+          </div>
 
-    <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
-      <Image
-        src="/hero-building.png"
-        alt="ROYAL Structural Engineers building"
-        fill
-        className="object-cover"
-        priority
-      />
+          <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
+            <Image
+              src="/hero-building.png"
+              alt="ROYAL Structural Engineers building"
+              fill
+              className="object-cover"
+              priority
+            />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
 
-      <div className="absolute bottom-6 left-6 border-l-4 border-[#c8a94a] bg-white/90 p-5 shadow-lg">
-        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
-          Engineering
-        </p>
-        <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
-          Discipline. Precision. Trust.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+            <div className="absolute bottom-6 left-6 border-l-4 border-[#c8a94a] bg-white/90 p-5 shadow-lg">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
+                Engineering
+              </p>
+              <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
+                Discipline. Precision. Trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURE STRIP */}
       <section className="border-b border-[#d8d8d8] bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-8 md:grid-cols-3 lg:px-8">
@@ -209,7 +211,10 @@ export default function Home() {
       {/* SERVICES */}
       <section id="services" className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow="Our Services" title="Specialized Engineering Services" />
+          <SectionTitle
+            eyebrow="Our Services"
+            title="Specialized Engineering Services"
+          />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => {
@@ -284,23 +289,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative min-h-[420px] overflow-hidden bg-[#eef1f5] p-8">
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:38px_38px] opacity-[0.07]" />
+          <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-[#eef1f5] shadow-xl">
+            <Image
+              src="/about-structure.png"
+              alt="Structural engineering model over technical plans"
+              fill
+              className="object-cover"
+            />
 
-            <div className="relative mx-auto mt-10 h-72 max-w-md border border-[#071b33]/20 bg-white shadow-xl">
-              <div className="absolute inset-x-8 top-8 h-56 border-x-4 border-[#7c8795]" />
-              <div className="absolute inset-x-14 top-14 h-44 border-x-4 border-[#7c8795]" />
-              <div className="absolute left-8 right-8 top-20 h-1 bg-[#7c8795]" />
-              <div className="absolute left-8 right-8 top-36 h-1 bg-[#7c8795]" />
-              <div className="absolute left-8 right-8 top-52 h-1 bg-[#7c8795]" />
-
-              <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(135deg,rgba(0,87,217,0.15),transparent_60%)]" />
-            </div>
-
-            <div className="relative mt-8 flex items-center justify-between border-t border-[#c8a94a] pt-5 text-sm text-[#4c5663]">
-              <span>Structural model</span>
-              <span>Technical documentation</span>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-white/30 via-transparent to-transparent" />
           </div>
         </div>
       </section>
@@ -308,7 +305,10 @@ export default function Home() {
       {/* PROCESS */}
       <section id="process" className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow="Our Process" title="A Clear Method from First Review to Final Support" />
+          <SectionTitle
+            eyebrow="Our Process"
+            title="A Clear Method from First Review to Final Support"
+          />
 
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {process.map((step) => (
@@ -439,18 +439,21 @@ export default function Home() {
               <a
                 href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white transition hover:border-[#c8a94a] hover:text-[#c8a94a]"
+                aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
               <a
                 href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white transition hover:border-[#c8a94a] hover:text-[#c8a94a]"
+                aria-label="Facebook"
               >
                 <Facebook size={18} />
               </a>
               <a
                 href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white transition hover:border-[#c8a94a] hover:text-[#c8a94a]"
+                aria-label="Instagram"
               >
                 <Instagram size={18} />
               </a>
@@ -471,7 +474,7 @@ function FeatureItem({
   title,
   text,
 }: {
-  icon: React.ElementType
+  icon: ElementType
   title: string
   text: string
 }) {
@@ -516,7 +519,7 @@ function TrustPoint({
   title,
   text,
 }: {
-  icon: React.ElementType
+  icon: ElementType
   title: string
   text: string
 }) {
