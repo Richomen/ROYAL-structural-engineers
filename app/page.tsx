@@ -86,8 +86,8 @@ export default function Home() {
             <Image
               src="/royal-logo.png"
               alt="ROYAL Structural Engineers"
-              width={180}
-              height={80}
+              width={360}
+              height={190}
               className="h-14 w-auto object-contain"
               priority
             />
