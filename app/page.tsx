@@ -5,10 +5,8 @@ import {
   Calculator,
   ClipboardCheck,
   HardHat,
-  ShieldCheck,
   Target,
   Handshake,
-  FileText,
   Wrench,
   Users,
   ArrowRight,
@@ -19,61 +17,86 @@ import {
   Linkedin,
   Facebook,
   Instagram,
+  FileCheck2,
+  Ruler,
 } from "lucide-react"
 
 const services = [
   {
+    icon: Building2,
+    title: "Structural Design & Engineering",
+    text: "Complete structural design solutions tailored to project requirements, with a focus on efficiency, code compliance, and constructability.",
+  },
+  {
     icon: Calculator,
     title: "Structural Calculations",
-    text: "Accurate analysis and calculations ensuring safety, stability and long-term performance.",
-  },
-  {
-    icon: Building2,
-    title: "Structural Design",
-    text: "Functional, efficient and code-compliant designs tailored to each project.",
-  },
-  {
-    icon: FileText,
-    title: "Technical Reports",
-    text: "Comprehensive reports for assessment, approval, due diligence and project documentation.",
-  },
-  {
-    icon: Wrench,
-    title: "Rehabilitation & Strengthening",
-    text: "Solutions to restore, upgrade and extend the life of existing structures.",
-  },
-  {
-    icon: Users,
-    title: "Technical Consulting",
-    text: "Expert guidance at every stage to support sound engineering decisions.",
+    text: "Accurate and defensible structural calculations prepared for permitting, approvals, and project documentation.",
   },
   {
     icon: HardHat,
-    title: "Project Support",
-    text: "Coordination, review and technical support for smooth project execution.",
+    title: "Seismic Anchorage & Equipment Support",
+    text: "Design of anchorage and support systems for equipment, including walk-in coolers/freezers and nonstructural components, in accordance with seismic requirements.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Existing Conditions Evaluation",
+    text: "Assessment of existing structures to identify structural capacity, deficiencies, and design constraints based on available information and field observations.",
+  },
+  {
+    icon: Wrench,
+    title: "Retrofit & Strengthening Design",
+    text: "Engineering solutions to repair, reinforce, or modify existing structures to meet current code and performance requirements.",
+  },
+  {
+    icon: Users,
+    title: "Construction Administration & Support",
+    text: "Responsive support during construction including RFI responses, submittal reviews, and clarification of design intent to assist with proper implementation.",
+  },
+]
+
+const values = [
+  {
+    icon: Target,
+    title: "Clarity",
+    text: "Clear communication of scope, assumptions, and design intent to align teams and foster trust.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Technical Discipline",
+    text: "Rigorous, precise, and code-compliant engineering grounded in consistency and attention to detail.",
+  },
+  {
+    icon: Handshake,
+    title: "Accountability",
+    text: "Defined responsibility and ownership to support reliable, transparent project delivery.",
+  },
+  {
+    icon: Ruler,
+    title: "Constructability",
+    text: "Practical, buildable solutions informed by real-world construction methods and constraints.",
   },
 ]
 
 const process = [
   {
     number: "1",
-    title: "Analysis",
-    text: "We study project requirements, site conditions and constraints to understand the challenge.",
+    title: "Proposal",
+    text: "We define the project scope, identify key structural considerations, and outline a clear approach, schedule, and fee to align expectations from the outset.",
   },
   {
     number: "2",
-    title: "Proposal",
-    text: "We present a clear scope, approach and technical proposal tailored to your needs.",
+    title: "Feasibility Studies",
+    text: "We evaluate existing conditions and design options to determine practical, code-compliant solutions before advancing into detailed design.",
   },
   {
     number: "3",
-    title: "Calculation & Documentation",
-    text: "We perform rigorous analysis and prepare accurate, code-compliant documentation.",
+    title: "Construction Documents",
+    text: "We develop complete structural drawings and calculations that are accurate, coordinated, and ready for permitting and construction.",
   },
   {
     number: "4",
-    title: "Ongoing Support",
-    text: "We remain available for reviews, clarifications and support throughout the project.",
+    title: "Construction Administration",
+    text: "We support the project during construction by responding to RFIs, reviewing submittals, and providing guidance to help ensure the design is properly executed.",
   },
 ]
 
@@ -86,12 +109,12 @@ export default function Home() {
           <a href="#home" className="flex items-center gap-3">
             <Image
               src="/Royal-azul.png"
-              alt="ROYAL Structural Engineers"
+              alt="Royal Structural Engineers"
               width={410}
               height={148}
-              className="h-auto w-[280px] object-contain"
+              className="h-auto w-[240px] object-contain"
               priority
-             />
+            />
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-medium text-white md:flex">
@@ -139,7 +162,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663] md:text-lg">
-              At ROYAL Structural Engineers, we combine deep technical expertise
+              At Royal Structural Engineers, we combine deep technical expertise
               with disciplined engineering principles to deliver safe, efficient
               and enduring solutions. From concept to completion, we build
               confidence in every structure.
@@ -158,7 +181,7 @@ export default function Home() {
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 border border-[#0057d9] px-6 py-4 text-sm font-semibold text-[#0057d9] transition hover:bg-[#0057d9] hover:text-white"
               >
-                Contact ROYAL
+                Contact Royal
                 <ArrowRight size={18} />
               </a>
             </div>
@@ -167,7 +190,7 @@ export default function Home() {
           <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
             <Image
               src="/hero-building.png"
-              alt="ROYAL Structural Engineers building"
+              alt="Royal Structural Engineers building"
               fill
               className="object-cover"
               priority
@@ -179,32 +202,11 @@ export default function Home() {
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0057d9]">
                 Engineering
               </p>
-              <p className="mt-1 font-serif text-2xl font-bold text-[#071b33]">
-                Discipline. Precision. Trust.
+              <p className="mt-1 max-w-md font-serif text-2xl font-bold text-[#071b33]">
+                Clarity. Discipline. Accountability. Constructability.
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* FEATURE STRIP */}
-      <section className="border-b border-[#d8d8d8] bg-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-8 md:grid-cols-3 lg:px-8">
-          <FeatureItem
-            icon={Building2}
-            title="Structural Design"
-            text="Innovative and code-compliant designs for all types of structures."
-          />
-          <FeatureItem
-            icon={ClipboardCheck}
-            title="Technical Reports"
-            text="Clear, accurate and reliable reports for informed decisions."
-          />
-          <FeatureItem
-            icon={Wrench}
-            title="Reinforcement Solutions"
-            text="Efficient detailing and reinforcement solutions for durability and safety."
-          />
         </div>
       </section>
 
@@ -213,7 +215,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             eyebrow="Our Services"
-            title="Specialized Engineering Services"
+            title="Specialized Structural Engineering Services"
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -250,64 +252,121 @@ export default function Home() {
 
       {/* ABOUT */}
       <section id="about" className="border-y border-[#d8d8d8] bg-white">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#c8a94a]">
-              About ROYAL
-            </p>
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <SectionTitle
+            eyebrow="About Royal"
+            title="Clear, Reliable and Buildable Structural Engineering"
+          />
 
-            <h2 className="mt-4 max-w-xl font-serif text-4xl font-bold leading-tight text-[#071b33] md:text-5xl">
-              Engineering Confidence. Built on Discipline and Trust.
-            </h2>
+          <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+            <div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-[#f7f5ef] shadow-xl">
+              <div className="absolute inset-0 bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:34px_34px] opacity-[0.06]" />
 
-            <div className="mt-5 h-1 w-16 bg-[#c8a94a]" />
+              <div className="relative flex h-full min-h-[520px] flex-col items-center justify-center p-8 text-center">
+                <div className="flex h-48 w-48 items-center justify-center rounded-full border border-[#c8a94a] bg-white shadow-lg">
+                  <Users size={72} className="text-[#0057d9]" />
+                </div>
 
-            <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663]">
-              ROYAL Structural Engineers is a professional structural
-              engineering consultancy committed to excellence, integrity and
-              long-term value. We work closely with architects, developers,
-              contractors and private clients to deliver practical, reliable and
-              buildable solutions.
-            </p>
+                <h3 className="mt-8 font-serif text-2xl font-bold text-[#071b33]">
+                  Principal Licensed Engineer
+                </h3>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-3">
-              <TrustPoint
-                icon={ShieldCheck}
-                title="Safety"
-                text="Safety in every decision and design."
-              />
-              <TrustPoint
-                icon={Target}
-                title="Precision"
-                text="Accuracy, detail and technical control."
-              />
-              <TrustPoint
-                icon={Handshake}
-                title="Reliability"
-                text="Professional service you can count on."
-              />
+                <p className="mt-3 max-w-sm text-sm leading-7 text-[#596575]">
+                  Photo placeholder. Replace this area with the principal
+                  engineer image when available.
+                </p>
+              </div>
             </div>
+
+            <article className="border border-[#d8d8d8] bg-[#f7f5ef] p-8 shadow-xl md:p-10">
+              <div className="mb-6 h-1 w-16 bg-[#c8a94a]" />
+
+              <div className="space-y-5 text-base leading-8 text-[#4c5663]">
+                <p>
+                  Royal Structural Engineers, Inc. provides structural
+                  engineering consulting services across a wide range of project
+                  types, including educational, healthcare, commercial, and
+                  specialized equipment installations. Led by a Principal
+                  Licensed Engineer, the firm delivers code-compliant, practical,
+                  and buildable design solutions for projects throughout the
+                  United States. Services include structural analysis, design,
+                  construction documentation, and construction-phase support,
+                  with an emphasis on coordination and clear communication
+                  across all stakeholders.
+                </p>
+
+                <p>
+                  The firm’s work is grounded in disciplined engineering
+                  principles and spans new construction, tenant improvements,
+                  equipment anchorage, and the evaluation and retrofit of
+                  existing structures. Experience includes projects in regulated
+                  environments such as schools and hospitals, requiring
+                  coordination with governing agencies and adherence to strict
+                  code and compliance standards. Through all phases of design,
+                  the firm provides technical leadership, develops
+                  construction-ready documents, and supports permitting and
+                  construction efforts.
+                </p>
+
+                <p>
+                  The Principal’s technical expertise, combined with hands-on
+                  project leadership and client-focused service, ensures
+                  effective communication and collaboration with architects,
+                  contractors, and owners. A strong emphasis is placed on
+                  constructability, accountability, and risk management, helping
+                  project teams identify challenges early and execute solutions
+                  efficiently. This approach supports consistent delivery of
+                  reliable engineering solutions and successful project outcomes
+                  from initial concept through construction completion.
+                </p>
+              </div>
+            </article>
           </div>
+        </div>
+      </section>
 
-          <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-[#eef1f5] shadow-xl">
-            <Image
-              src="/about-structure.png"
-              alt="Structural engineering model over technical plans"
-              fill
-              className="object-cover"
-            />
+      {/* VALUES */}
+      <section className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <SectionTitle
+            eyebrow="Our Values"
+            title="Engineering Principles That Guide Every Project"
+          />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-white/30 via-transparent to-transparent" />
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {values.map((value) => {
+              const Icon = value.icon
+
+              return (
+                <article
+                  key={value.title}
+                  className="border border-[#d8d8d8] bg-white p-7 shadow-sm"
+                >
+                  <Icon className="text-[#0057d9]" size={34} />
+
+                  <h3 className="mt-5 font-serif text-xl font-bold text-[#071b33]">
+                    {value.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-[#596575]">
+                    {value.text}
+                  </p>
+                </article>
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
+      <section
+        id="process"
+        className="border-y border-[#d8d8d8] bg-white px-6 py-20 lg:px-8"
+      >
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             eyebrow="Our Process"
-            title="A Clear Method from First Review to Final Support"
+            title="A Clear Method from Proposal to Construction Support"
           />
 
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -342,7 +401,7 @@ export default function Home() {
         <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
           <div className="flex items-center gap-5">
             <div className="hidden border border-[#c8a94a] p-4 text-[#c8a94a] md:block">
-              <Building2 size={36} />
+              <FileCheck2 size={36} />
             </div>
 
             <h2 className="font-serif text-2xl font-bold text-white md:text-3xl">
@@ -351,10 +410,10 @@ export default function Home() {
           </div>
 
           <a
-            href="mailto:info@royalengineers.com"
+            href="mailto:info@royalstructural.com"
             className="inline-flex items-center justify-center border border-[#c8a94a] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#c8a94a] hover:text-[#071b33]"
           >
-            Contact ROYAL Today
+            Contact Royal Today
           </a>
         </div>
       </section>
@@ -363,17 +422,17 @@ export default function Home() {
       <footer className="bg-[#071b33] px-6 py-14 text-white lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
           <div>
-           <Image
+            <Image
               src="/Royal-azul.png"
-              alt="ROYAL Structural Engineers"
+              alt="Royal Structural Engineers"
               width={410}
               height={148}
               className="h-auto w-[260px] object-contain"
-             />
+            />
 
             <p className="mt-5 max-w-xs text-sm leading-7 text-white/70">
-              Structural integrity. Professional excellence. Trusted by clients.
-              Built on discipline and trust.
+              Code-compliant, practical, and buildable structural engineering
+              solutions.
             </p>
           </div>
 
@@ -383,19 +442,23 @@ export default function Home() {
             <ul className="mt-5 space-y-4 text-sm text-white/75">
               <li className="flex gap-3">
                 <MapPin size={18} className="shrink-0 text-[#c8a94a]" />
-                123 Engineering Avenue, Business District
+                <span>
+                  1371 E Idaho St,
+                  <br />
+                  West Covina, CA 91790
+                </span>
               </li>
               <li className="flex gap-3">
                 <Phone size={18} className="shrink-0 text-[#c8a94a]" />
-                +34 000 000 000
+                (626) 260-5985
               </li>
               <li className="flex gap-3">
                 <Mail size={18} className="shrink-0 text-[#c8a94a]" />
-                info@royalengineers.com
+                info@royalstructural.com
               </li>
               <li className="flex gap-3">
                 <Globe size={18} className="shrink-0 text-[#c8a94a]" />
-                www.royalengineers.com
+                www.royalstructural.com
               </li>
             </ul>
           </div>
@@ -462,33 +525,10 @@ export default function Home() {
         </div>
 
         <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-6 text-center text-xs text-white/50">
-          © 2026 ROYAL Structural Engineers. All rights reserved.
+          © 2026 Royal Structural Engineers, Inc. All rights reserved.
         </div>
       </footer>
     </main>
-  )
-}
-
-function FeatureItem({
-  icon: Icon,
-  title,
-  text,
-}: {
-  icon: ElementType
-  title: string
-  text: string
-}) {
-  return (
-    <div className="flex gap-5 border-[#d8d8d8] md:border-r md:pr-8 last:border-r-0">
-      <Icon className="mt-1 shrink-0 text-[#0057d9]" size={42} />
-
-      <div>
-        <h3 className="font-serif text-lg font-bold text-[#071b33]">
-          {title}
-        </h3>
-        <p className="mt-1 text-sm leading-6 text-[#596575]">{text}</p>
-      </div>
-    </div>
   )
 }
 
@@ -510,28 +550,6 @@ function SectionTitle({
       </h2>
 
       <div className="mx-auto mt-5 h-1 w-16 bg-[#c8a94a]" />
-    </div>
-  )
-}
-
-function TrustPoint({
-  icon: Icon,
-  title,
-  text,
-}: {
-  icon: ElementType
-  title: string
-  text: string
-}) {
-  return (
-    <div>
-      <Icon className="text-[#0057d9]" size={32} />
-
-      <h3 className="mt-3 font-serif text-lg font-bold text-[#071b33]">
-        {title}
-      </h3>
-
-      <p className="mt-2 text-sm leading-6 text-[#596575]">{text}</p>
     </div>
   )
 }
