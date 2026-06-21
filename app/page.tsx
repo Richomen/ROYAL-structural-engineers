@@ -538,3 +538,24 @@ function SectionTitle({
     </div>
   )
 }
+function TrustPoint({
+  icon: Icon,
+  title,
+  text,
+}: {
+  icon: ElementType
+  title: string
+  text: string
+}) {
+  return (
+    <div>
+      <Icon className="text-[#0057d9]" size={32} />
+
+      <h3 className="mt-3 font-serif text-lg font-bold text-[#071b33]">
+        {title}
+      </h3>
+
+      <p className="mt-2 text-sm leading-6 text-[#596575]">{text}</p>
+    </div>
+  )
+}
