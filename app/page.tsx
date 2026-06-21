@@ -251,79 +251,64 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="border-y border-[#d8d8d8] bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <SectionTitle
-            eyebrow="About Royal"
-            title="Clear, Reliable and Buildable Structural Engineering"
-          />
+     {/* ABOUT */}
+<section id="about" className="border-y border-[#d8d8d8] bg-white">
+  <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8">
+    <div>
+      <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#c8a94a]">
+        About Royal
+      </p>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-            <div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-[#f7f5ef] shadow-xl">
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:34px_34px] opacity-[0.06]" />
+      <h2 className="mt-4 max-w-xl font-serif text-4xl font-bold leading-tight text-[#071b33] md:text-5xl">
+        Clear, Reliable and Buildable Structural Engineering.
+      </h2>
 
-              <div className="relative flex h-full min-h-[520px] flex-col items-center justify-center p-8 text-center">
-                <div className="flex h-48 w-48 items-center justify-center rounded-full border border-[#c8a94a] bg-white shadow-lg">
-                  <Users size={72} className="text-[#0057d9]" />
-                </div>
+      <div className="mt-5 h-1 w-16 bg-[#c8a94a]" />
 
-                <h3 className="mt-8 font-serif text-2xl font-bold text-[#071b33]">
-                  Principal Licensed Engineer
-                </h3>
+      <p className="mt-6 max-w-xl text-base leading-8 text-[#4c5663]">
+        Royal Structural Engineers, Inc is a structural engineering consultancy
+        focused on delivering clear, reliable, and buildable solutions. We work
+        closely with architects, developers, contractors, and private clients to
+        provide thoughtful design, responsive service, and technically sound
+        engineering.
+      </p>
 
-                <p className="mt-3 max-w-sm text-sm leading-7 text-[#596575]">
-                  Photo placeholder. Replace this area with the principal
-                  engineer image when available.
-                </p>
-              </div>
-            </div>
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        <TrustPoint
+          icon={Target}
+          title="Clarity"
+          text="Clear communication of scope, assumptions, and design intent to align teams and foster trust."
+        />
+        <TrustPoint
+          icon={ClipboardCheck}
+          title="Technical Discipline"
+          text="Rigorous, precise, and code-compliant engineering grounded in consistency and attention to detail."
+        />
+        <TrustPoint
+          icon={Handshake}
+          title="Accountability"
+          text="Defined responsibility and ownership to support reliable, transparent project delivery."
+        />
+        <TrustPoint
+          icon={Ruler}
+          title="Constructability"
+          text="Practical, buildable solutions informed by real-world construction methods and constraints."
+        />
+      </div>
+    </div>
 
-            <article className="border border-[#d8d8d8] bg-[#f7f5ef] p-8 shadow-xl md:p-10">
-              <div className="mb-6 h-1 w-16 bg-[#c8a94a]" />
+    <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-[#eef1f5] shadow-xl">
+      <Image
+        src="/about-structure.png"
+        alt="Structural engineering model over technical plans"
+        fill
+        className="object-cover"
+      />
 
-              <div className="space-y-5 text-base leading-8 text-[#4c5663]">
-                <p>
-                  Royal Structural Engineers, Inc. provides structural
-                  engineering consulting services across a wide range of project
-                  types, including educational, healthcare, commercial, and
-                  specialized equipment installations. Led by a Principal
-                  Licensed Engineer, the firm delivers code-compliant, practical,
-                  and buildable design solutions for projects throughout the
-                  United States. Services include structural analysis, design,
-                  construction documentation, and construction-phase support,
-                  with an emphasis on coordination and clear communication
-                  across all stakeholders.
-                </p>
-
-                <p>
-                  The firm’s work is grounded in disciplined engineering
-                  principles and spans new construction, tenant improvements,
-                  equipment anchorage, and the evaluation and retrofit of
-                  existing structures. Experience includes projects in regulated
-                  environments such as schools and hospitals, requiring
-                  coordination with governing agencies and adherence to strict
-                  code and compliance standards. Through all phases of design,
-                  the firm provides technical leadership, develops
-                  construction-ready documents, and supports permitting and
-                  construction efforts.
-                </p>
-
-                <p>
-                  The Principal’s technical expertise, combined with hands-on
-                  project leadership and client-focused service, ensures
-                  effective communication and collaboration with architects,
-                  contractors, and owners. A strong emphasis is placed on
-                  constructability, accountability, and risk management, helping
-                  project teams identify challenges early and execute solutions
-                  efficiently. This approach supports consistent delivery of
-                  reliable engineering solutions and successful project outcomes
-                  from initial concept through construction completion.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <div className="absolute inset-0 bg-gradient-to-r from-white/30 via-transparent to-transparent" />
+    </div>
+  </div>
+</section>
 
       {/* VALUES */}
       <section className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
