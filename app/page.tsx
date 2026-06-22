@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f5ef] text-[#071b33]">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071b33]/95 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#04145c]/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
             <Image
@@ -442,7 +442,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#071b33] px-6 py-14 text-white lg:px-8">
+      <footer className="bg-[#04145c] px-6 py-14 text-white lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
           <div>
             <Image
