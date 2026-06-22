@@ -487,7 +487,7 @@ export default function Home() {
               <li className="flex gap-3">
                 <MapPin size={18} className="shrink-0 text-[#c8a94a]" />
                 <span>
-                  1371 E Idaho St,
+                  1371 E Idahome St,
                   <br />
                   West Covina, CA 91790
                 </span>
