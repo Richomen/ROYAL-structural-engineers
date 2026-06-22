@@ -187,7 +187,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative min-h-[420px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
+          <div className="relative min-h-[560px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
             <Image
               src="/hero-building.png"
               alt="Royal Structural Engineers building"
