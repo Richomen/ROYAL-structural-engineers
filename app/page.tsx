@@ -348,8 +348,8 @@ export default function Home() {
     <Image
       src="/mbe-certification.png"
       alt="MBE Certification"
-      width={140}
-      height={140}
+      width={180}
+      height={180}
       className="h-auto w-[120px] object-contain"
           />
         </div>
