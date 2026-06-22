@@ -307,32 +307,26 @@ export default function Home() {
       </section>
 
       {/* PRINCIPAL */}
-      <section className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionTitle
-            eyebrow="Technical Leadership"
-            title="Principal-Led Structural Engineering Consulting"
-          />
+<div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
+  <Image
+    src="/Ricardo_Business_Small.png"
+    alt="Principal Licensed Engineer"
+    fill
+    className="object-cover"
+  />
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-            <div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:34px_34px] opacity-[0.06]" />
+  <div className="absolute inset-0 bg-gradient-to-t from-[#071b33]/70 via-transparent to-transparent" />
 
-              <div className="relative flex h-full min-h-[520px] flex-col items-center justify-center p-8 text-center">
-                <div className="flex h-48 w-48 items-center justify-center rounded-full border border-[#c8a94a] bg-[#f7f5ef] shadow-lg">
-                  <Users size={72} className="text-[#0057d9]" />
-                </div>
+  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#c8a94a]">
+      Principal Licensed Engineer
+    </p>
 
-                <h3 className="mt-8 font-serif text-2xl font-bold text-[#071b33]">
-                  Principal Licensed Engineer
-                </h3>
-
-                <p className="mt-3 max-w-sm text-sm leading-7 text-[#596575]">
-                  Photo placeholder. Replace this area with the principal
-                  engineer image when available.
-                </p>
-              </div>
-            </div>
+    <h3 className="mt-3 font-serif text-3xl font-bold">
+      Technical Leadership
+    </h3>
+  </div>
+</div>
 
             <article className="border border-[#d8d8d8] bg-white p-8 shadow-xl md:p-10">
               <div className="mb-6 h-1 w-16 bg-[#c8a94a]" />
