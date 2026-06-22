@@ -108,7 +108,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
             <Image
-              src="/Royal-azul.png"
+              src="/ROYAL Vector Blanco.png"
               alt="Royal Structural Engineers"
               width={410}
               height={148}
@@ -467,7 +467,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
           <div>
             <Image
-              src="/Royal-azul.png"
+              src="/ROYAL Vector Blanco.png"
               alt="Royal Structural Engineers"
               width={410}
               height={148}
