@@ -306,75 +306,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRINCIPAL */}
-<div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
-  <Image
-    src="/Ricardo_Business_Small.png"
-    alt="Principal Licensed Engineer"
-    fill
-    className="object-cover"
-  />
+{/* PRINCIPAL */}
+<section className="bg-[#f7f5ef] px-6 py-20 lg:px-8">
+  <div className="mx-auto max-w-7xl">
+    <SectionTitle
+      eyebrow="Technical Leadership"
+      title="Principal-Led Structural Engineering Consulting"
+    />
 
-  <div className="absolute inset-0 bg-gradient-to-t from-[#071b33]/70 via-transparent to-transparent" />
+    <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+      <div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
+        <Image
+          src="/Ricardo_Business_Small.png"
+          alt="Principal Licensed Engineer"
+          fill
+          className="object-cover"
+        />
 
-  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#c8a94a]">
-      Principal Licensed Engineer
-    </p>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#071b33]/70 via-transparent to-transparent" />
 
-    <h3 className="mt-3 font-serif text-3xl font-bold">
-      Technical Leadership
-    </h3>
-  </div>
-</div>
+        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#c8a94a]">
+            Principal Licensed Engineer
+          </p>
 
-            <article className="border border-[#d8d8d8] bg-white p-8 shadow-xl md:p-10">
-              <div className="mb-6 h-1 w-16 bg-[#c8a94a]" />
-
-              <div className="space-y-5 text-base leading-8 text-[#4c5663]">
-                <p>
-                  Royal Structural Engineers, Inc. provides structural
-                  engineering consulting services across a wide range of project
-                  types, including educational, healthcare, commercial, and
-                  specialized equipment installations. Led by a Principal
-                  Licensed Engineer, the firm delivers code-compliant, practical,
-                  and buildable design solutions for projects throughout the
-                  United States. Services include structural analysis, design,
-                  construction documentation, and construction-phase support,
-                  with an emphasis on coordination and clear communication
-                  across all stakeholders.
-                </p>
-
-                <p>
-                  The firm’s work is grounded in disciplined engineering
-                  principles and spans new construction, tenant improvements,
-                  equipment anchorage, and the evaluation and retrofit of
-                  existing structures. Experience includes projects in regulated
-                  environments such as schools and hospitals, requiring
-                  coordination with governing agencies and adherence to strict
-                  code and compliance standards. Through all phases of design,
-                  the firm provides technical leadership, develops
-                  construction-ready documents, and supports permitting and
-                  construction efforts.
-                </p>
-
-                <p>
-                  The Principal’s technical expertise, combined with hands-on
-                  project leadership and client-focused service, ensures
-                  effective communication and collaboration with architects,
-                  contractors, and owners. A strong emphasis is placed on
-                  constructability, accountability, and risk management, helping
-                  project teams identify challenges early and execute solutions
-                  efficiently. This approach supports consistent delivery of
-                  reliable engineering solutions and successful project outcomes
-                  from initial concept through construction completion.
-                </p>
-              </div>
-            </article>
-          </div>
+          <h3 className="mt-3 font-serif text-3xl font-bold">
+            Technical Leadership
+          </h3>
         </div>
-      </section>
+      </div>
 
+      <article className="border border-[#d8d8d8] bg-white p-8 shadow-xl md:p-10">
+        <div className="mb-6 h-1 w-16 bg-[#c8a94a]" />
+
+        <div className="space-y-5 text-base leading-8 text-[#4c5663]">
+          <p>
+            Royal Structural Engineers, Inc. provides structural engineering
+            consulting services across a wide range of project types, including
+            educational, healthcare, commercial, and specialized equipment
+            installations. Led by a Principal Licensed Engineer, the firm
+            delivers code-compliant, practical, and buildable design solutions
+            for projects throughout the United States. Services include
+            structural analysis, design, construction documentation, and
+            construction-phase support, with an emphasis on coordination and
+            clear communication across all stakeholders.
+          </p>
+
+          <p>
+            The firm’s work is grounded in disciplined engineering principles
+            and spans new construction, tenant improvements, equipment
+            anchorage, and the evaluation and retrofit of existing structures.
+            Experience includes projects in regulated environments such as
+            schools and hospitals, requiring coordination with governing
+            agencies and adherence to strict code and compliance standards.
+            Through all phases of design, the firm provides technical
+            leadership, develops construction-ready documents, and supports
+            permitting and construction efforts.
+          </p>
+
+          <p>
+            The Principal’s technical expertise, combined with hands-on project
+            leadership and client-focused service, ensures effective
+            communication and collaboration with architects, contractors, and
+            owners. A strong emphasis is placed on constructability,
+            accountability, and risk management, helping project teams identify
+            challenges early and execute solutions efficiently. This approach
+            supports consistent delivery of reliable engineering solutions and
+            successful project outcomes from initial concept through
+            construction completion.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
       {/* PROCESS */}
       <section
         id="process"
