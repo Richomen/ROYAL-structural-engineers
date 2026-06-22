@@ -153,7 +153,7 @@ export default function Home() {
           <div className="h-full w-full bg-[linear-gradient(to_right,#071b33_1px,transparent_1px),linear-gradient(to_bottom,#071b33_1px,transparent_1px)] bg-[size:42px_42px]" />
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-24">
           <div>
             <div className="mb-5 h-1 w-16 bg-[#c8a94a]" />
 
