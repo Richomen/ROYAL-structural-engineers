@@ -319,7 +319,7 @@ export default function Home() {
   <div className="mx-auto max-w-[320px]">
     <div className="relative aspect-[4/5] overflow-hidden border border-[#d8d8d8] bg-[#f7f5ef] shadow-md">
       <Image
-        src="/Ricardo_Business_Small.png"
+        src="/Ricardo_Business_Smallping.png"
         alt="Principal Licensed Engineer"
         fill
         className="object-cover object-top"
