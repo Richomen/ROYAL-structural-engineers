@@ -350,7 +350,7 @@ export default function Home() {
       alt="MBE Certification"
       width={180}
       height={180}
-      className="h-auto w-[120px] object-contain"
+      className="h-auto w-[140px] object-contain"
           />
         </div>
       </div>
