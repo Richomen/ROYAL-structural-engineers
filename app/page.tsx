@@ -339,6 +339,21 @@ export default function Home() {
         Principal-led engineering guidance with a focus on clear communication,
         practical solutions, and construction-ready documentation.
       </p>
+      <div className="mt-6 border-t border-[#d8d8d8] pt-6">
+     <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c8a94a]">
+    Certification
+    </p>
+
+    <div className="flex justify-start">
+    <Image
+      src="/mbe-certification.png"
+      alt="MBE Certification"
+      width={140}
+      height={140}
+      className="h-auto w-[120px] object-contain"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
