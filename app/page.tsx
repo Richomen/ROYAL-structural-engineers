@@ -315,26 +315,33 @@ export default function Home() {
     />
 
     <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-      <div className="relative min-h-[520px] overflow-hidden border border-[#d8d8d8] bg-white shadow-xl">
-        <Image
-          src="/Ricardo_Business_Small.png"
-          alt="Principal Licensed Engineer"
-          fill
-          className="object-cover"
-        />
+    <div className="border border-[#d8d8d8] bg-white p-8 shadow-xl">
+  <div className="mx-auto max-w-[320px]">
+    <div className="relative aspect-[4/5] overflow-hidden border border-[#d8d8d8] bg-[#f7f5ef] shadow-md">
+      <Image
+        src="/Ricardo_Business_Small.png"
+        alt="Principal Licensed Engineer"
+        fill
+        className="object-cover object-top"
+      />
+    </div>
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#071b33]/70 via-transparent to-transparent" />
+    <div className="mt-6 border-l-4 border-[#c8a94a] pl-5">
+      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#0057d9]">
+        Principal Licensed Engineer
+      </p>
 
-        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#c8a94a]">
-            Principal Licensed Engineer
-          </p>
+      <h3 className="mt-3 font-serif text-2xl font-bold text-[#071b33]">
+        Technical Leadership
+      </h3>
 
-          <h3 className="mt-3 font-serif text-3xl font-bold">
-            Technical Leadership
-          </h3>
-        </div>
-      </div>
+      <p className="mt-3 text-sm leading-7 text-[#596575]">
+        Principal-led engineering guidance with a focus on clear communication,
+        practical solutions, and construction-ready documentation.
+      </p>
+    </div>
+  </div>
+</div>
 
       <article className="border border-[#d8d8d8] bg-white p-8 shadow-xl md:p-10">
         <div className="mb-6 h-1 w-16 bg-[#c8a94a]" />
